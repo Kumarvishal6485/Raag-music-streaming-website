@@ -78,7 +78,7 @@
                             while($songs = mysqli_fetch_assoc($data)){
                             ?>
                             <div class="favsongs">
-                                <img src="<?php echo $songs['image'];?>" alt="song" width="230px" height="200px"
+                                <img src="<?php echo 'images/'.$songs['image'];?>" alt="song" width="230px" height="200px"
                                 style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                                 <a href='play.php?sid=<?php echo $songs['id']?>' target='_parent'>
                                 <img src='play.png' alt='playbutton' height='80px' width='80px'
@@ -102,7 +102,7 @@
                     while($data = mysqli_fetch_assoc($result)){
                         ?>
                         <div class="favsongs">
-                            <img src="<?php echo $data['image'];?>" alt="song" width="230px" height="200px"
+                            <img src="<?php echo 'images/'.$data['image'];?>" alt="song" width="230px" height="200px"
                             style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                             <a href='play.php?sid=<?php echo $data['id']?>' target='_parent'>
                             <img src='play.png' alt='playbutton' height='80px' width='80px'
@@ -133,7 +133,7 @@
                             while($songs = mysqli_fetch_assoc($data)){
                             ?>
                             <div class="playlistsongs">
-                                <img src="<?php echo $songs['image'];?>" alt="song" width="230px" height="200px"
+                                <img src="<?php echo 'images/'.$songs['image'];?>" alt="song" width="230px" height="200px"
                                 style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                                 <a href='play.php?sid=<?php echo $songs['id']?>' target='_parent'>
                                 <img src='play.png' alt='playbutton' height='80px' width='80px'
@@ -157,7 +157,7 @@
                     while($data = mysqli_fetch_assoc($result)){
                         ?>
                         <div class="playlistsongs">
-                            <img src="<?php echo $data['image'];?>" alt="song" width="230px" height="200px"
+                            <img src="<?php echo 'images/'.$data['image'];?>" alt="song" width="230px" height="200px"
                             style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                             <a href='play.php?sid=<?php echo $data['id']?>' target='_parent'>
                             <img src='play.png' alt='playbutton' height='80px' width='80px'
@@ -186,7 +186,7 @@
                             while($songs = mysqli_fetch_assoc($data)){
                             ?>
                             <div class="recentsongs">
-                                <img src="<?php echo $songs['image'];?>" alt="song" width="230px" height="200px"
+                                <img src="<?php echo 'images/'.$songs['image'];?>" alt="song" width="230px" height="200px"
                                 style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                                 <a href='play.php?sid=<?php echo $songs['id']?>' target='_parent'>
                                 <img src='play.png' alt='playbutton' height='80px' width='80px'
@@ -210,7 +210,7 @@
                         while($data = mysqli_fetch_assoc($result)){
                             ?>
                             <div class="recentsongs">
-                                <img src="<?php echo $data['image'];?>" alt="song" width="230px" height="200px"
+                                <img src="<?php echo 'images/'.$data['image'];?>" alt="song" width="230px" height="200px"
                                 style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                                 <a href='play.php?sid=<?php echo $data['id']?>' target='_parent'>
                                 <img src='play.png' alt='playbutton' height='80px' width='80px'
@@ -231,49 +231,49 @@
             </div>
             <div class="stream" id="stream">
                 <div class="streaming">
-                    <img src="song1.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song1.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /* visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song2.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song2.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /*visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song3.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song3.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /*visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song4.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song4.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /* visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song5.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song5.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /* visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song6.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song6.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /* visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song7.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song7.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /* visibility: hidden;*/">
                 </div>
                 <div class="streaming">
-                    <img src="song8.jpg" alt="song" width="230px" height="200px"
+                    <img src="images/song8.jpg" alt="song" width="230px" height="200px"
                         style="border-radius: 20px; margin: 10px 0px 0px 8px; ">
                     <img src="play.png" alt="playbutton" height="80px" width="80px"
                         style="border-radius: 100px; position: absolute; right: 20px; bottom: 20%; /* visibility: hidden;*/">
